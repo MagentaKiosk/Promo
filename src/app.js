@@ -1,4 +1,10 @@
+import Contact from "./contact"
+
 document.addEventListener('DOMContentLoaded', () => {
-    const appDiv = document.getElementById('app');
-    appDiv.innerHTML = '<h1>Hello, World!</h1>';
-});
+    const root = document.getElementById('app')
+
+
+    let contact = document.createElement("contact-me")
+    contact.setAttribute("data-photo", "")
+    root.appendChild(contact)
+})

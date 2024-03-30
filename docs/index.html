@@ -4,11 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        :root {
+            --bg: white;
+            --text: black;
+            background: var(--bg);
+            color: var(--text);
+
+            * {
+                margin: unset;
+            }
+        }
+    </style>
 </head>
 <body>
     <div id="app">
         <!-- app content -->
     </div>
-    <script src="/dist/bundle.js"></script>
+    <script src="bundle.js"></script>
 </body>
 </html>
