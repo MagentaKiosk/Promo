@@ -88,6 +88,9 @@
   width: 3rem;
   border-radius: 3rem;
   align-self: flex-end;
+  border: unset;
+  outline: unset;
+  box-shadow: unset;
 }
 .contactme_container__Feo0P .contactme_menu__oWrHA {
   background: white;
