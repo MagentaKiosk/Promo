@@ -22,7 +22,9 @@ export default function RootLayout({
         {children}
 
 
-        <ContactMe />
+        <Suspense>
+          <ContactMe />
+        </Suspense>
       </body>
     </html>
   );
