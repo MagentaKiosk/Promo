@@ -1,0 +1,59 @@
+form.container {
+    display: flex;
+    gap: 1rem;
+
+    background: white;
+    margin: 1rem;
+
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    
+    div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+        justify-content: center;
+
+        &.image {
+
+            width: fit-content;
+            
+            label {
+
+                img {
+                    background: #00000010;
+                    height: 6rem;
+                    width: 6rem;
+                    border-radius: 12rem;
+                }
+            }
+
+            input[type="file"] {
+                display: none;
+
+                button {
+                    background: pink;
+                }
+            }
+        }
+
+        input {
+            border: unset;
+            background: unset;
+            color: black;
+
+            &:focus {
+                outline: unset;
+            }
+
+
+            &[type="text"].name {
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
