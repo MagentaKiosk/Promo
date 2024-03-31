@@ -4,17 +4,19 @@ import style from './card.module.scss'
 interface test {
     photo?: string
     photoChange?: any
+    formSubmit?: any
 }
 
 export const View = ({
     photo,
-    photoChange
+    photoChange,
+    formSubmit
 }: test) => {
 
     return <form className={style.container}>
         <div className={style.image}>
             <label htmlFor="file">
-                <img src="" />
+                <img src={photo ? photo : ""} />
             </label>
             <input id="file" type="file" 
                 onChange={(e) => photoChange(e)}

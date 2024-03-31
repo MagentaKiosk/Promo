@@ -4,26 +4,15 @@ import React from "react"
 import { View } from "./view"
 
 export const Client = () => {
-    const [ photo, setPhoto ] = React.useState<string | undefined>()
+    const [ photo, setPhoto ] = React.useState<string>("")
 
-
-
-    const url = ""
-
-
-
-    const handle = {
-        photo: {
-            onUpload(e: any) {
-                console.log("testing: ", e.target.value)
-                setPhoto(e.target.value.toString())
-                console.log(photo)
-            }
-        }
-    }
+    React.useEffect(() => {
+        photo && console.log("testing: ", photo)
+    }, [photo])
 
     return <View
         photo={photo}
-        photoChange={(e: any) => handle.photo.onUpload(e)}
+        photoChange={(e: any) => setPhoto(e.target.value.toString())}
+        formSubmit={(e: any) => {}}
     />
 }
