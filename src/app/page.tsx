@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import React from "react";
+import React, { Suspense } from "react";
 
 import { ContactMe } from "../components/chip";
 
@@ -12,7 +12,10 @@ export default function Home() {
       <TestSection />
       <TestSection />
     </div>
-    <ContactMe />
+
+    <Suspense fallback={<>Loading contact info...</>}>
+      <ContactMe />
+    </Suspense>
   </>
 }
 

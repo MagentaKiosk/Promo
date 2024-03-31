@@ -1,57 +1,89 @@
 form.container {
+    margin: 2rem;
+    background: white;
+    width: fit-content;
+
+    padding: 1rem;
+
     display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 
-    background: white;
-    margin: 1rem;
-
-    width: fit-content;
-    padding: 0.5rem;
     border-radius: 0.5rem;
+
     
     div {
         display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-        
-        justify-content: center;
+
 
         &.image {
-
-            width: fit-content;
+            position: relative;
+            height: 5rem;
+            aspect-ratio: 1/1;
             
             label {
+                position: absolute;
+                inset: 0;
+                padding: 0.25rem;
 
                 img {
-                    background: #00000010;
-                    height: 6rem;
-                    width: 6rem;
+                    background: red;
+                    height: stretch;
+                    width: stretch; 
+
                     border-radius: 12rem;
                 }
             }
-
             input[type="file"] {
                 display: none;
-
-                button {
-                    background: pink;
-                }
             }
         }
+        &.fields {
+            display: flex;
+            flex-direction: column;
+            div.wrapper {
+                position: relative;
+                overflow: hidden;
+                width: fit-content;
+                height: fit-content;
 
-        input {
-            border: unset;
-            background: unset;
-            color: black;
+                &::after {
+                    --transform: -100%;
+                    content: "";
+                    position: absolute;
+                    inset: 0;
+                    padding: 0;
+                    margin: 0;
+                    border-bottom: 2px solid red;
+                    z-index: 100;
 
-            &:focus {
-                outline: unset;
-            }
+                    transform: translateX(var(--transform));
+                    transition: ease-in-out 0.25s transform;
+                    pointer-events: none;
+                }
+                &:focus-within {
+
+                    &::after {
+                        --transform: 0;
+                    }
+                }
+                
+                input {
+                    --transform: 0;
+                    background: unset;
+                    outline: unset;
+                    border: 0;
+                    box-sizing: border-box;
+                    width: 100%;
+                    padding: 0.5rem 0;
 
 
-            &[type="text"].name {
-                font-size: 1.5rem;
-                font-weight: 600;
+                    &.name {
+                        background: pink;
+                    }
+                }
+
             }
         }
     }
