@@ -2,7 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import React from "react";
 
-import { ContactMe } from "../components";
+import { ContactMe } from "../components/chip";
 
 export default function Home() {
   return <>

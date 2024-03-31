@@ -1,6 +1,7 @@
 'use client' 
 import React, { useRef } from "react";
 import style from './setup.module.scss'
+import { Card } from "@/components/card";
 
 //  --------
 export default function Setup() {
@@ -19,28 +20,7 @@ export default function Setup() {
 
 
     return <>
-        <form className={style.container} onSubmit={(e) => handle.submit(e)}>
-            <div className={style.image}>
-                <label htmlFor="file" className={style.label}>
-                    <img src={photo && photo} />
-                </label>
-                <input id="file" type="file" onChange={(e) => {
-                    setPhoto(e.target.value)
-                    console.log(photo)
-                }}/>
-            </div>
-            
-            <div>
-                <input className={style.name} type="text" placeholder="First Name" />
-                <input type="text" placeholder="Title" />
-                <input type="tel" 
-                    placeholder="Phone number" 
-                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-                    minLength={10}
-                    maxLength={10}
-                />
-            </div>
-        </form>
+        <Card />
 
 
         <div>Display QR code</div>

@@ -1,7 +1,7 @@
-/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/app/setup/setup.module.scss ***!
-  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
-form.setup_container__ViXtL {
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/card/card.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+form.card_container__Sep0j {
   display: flex;
   gap: 1rem;
   background: white;
@@ -11,37 +11,37 @@ form.setup_container__ViXtL {
   padding: 0.5rem;
   border-radius: 0.5rem;
 }
-form.setup_container__ViXtL div {
+form.card_container__Sep0j div {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   justify-content: center;
 }
-form.setup_container__ViXtL div.setup_image__S_RiD {
+form.card_container__Sep0j div.card_image__EBbAq {
   width: -moz-fit-content;
   width: fit-content;
 }
-form.setup_container__ViXtL div.setup_image__S_RiD label img {
+form.card_container__Sep0j div.card_image__EBbAq label img {
   background: rgba(0, 0, 0, 0.062745098);
   height: 6rem;
   width: 6rem;
   border-radius: 12rem;
 }
-form.setup_container__ViXtL div.setup_image__S_RiD input[type=file] {
+form.card_container__Sep0j div.card_image__EBbAq input[type=file] {
   display: none;
 }
-form.setup_container__ViXtL div.setup_image__S_RiD input[type=file] button {
+form.card_container__Sep0j div.card_image__EBbAq input[type=file] button {
   background: pink;
 }
-form.setup_container__ViXtL div input {
+form.card_container__Sep0j div input {
   border: unset;
   background: unset;
   color: black;
 }
-form.setup_container__ViXtL div input:focus {
+form.card_container__Sep0j div input:focus {
   outline: unset;
 }
-form.setup_container__ViXtL div input[type=text].setup_name__gmIIa {
+form.card_container__Sep0j div input[type=text].card_name__sffip {
   font-size: 1.5rem;
   font-weight: 600;
 }
